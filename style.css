@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body,html {
+    height: 100%;
+}
+body{
+    font-size: 12px;
+    line-height: 1.2;
+    background-color: #fff;
+}
+main{
+    height: calc(100vh - 50px);
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+footer>div{
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+footer .active{
+    color: #de0e0e;
+}
+footer>div>span{
+    display: block;
+    padding-top: 5px;
+}
+main>section{
+    display: none;
+}
+main>section:first-child{
+    display: block;
+}
+.item{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+}
+.item>a{
+    display: flex;
+}
+.item .order{
+    display: flex;
+    align-items: center;
+}
+.item .order span {
+    padding: 0 4px;
+    color: #fff;
+    background: #f37f07;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.item .detail h2{
+    font-size: 16px;
+
+}
+.item .detail .extra{
+    color: #999;
+    margin-top: 4px;
+}
+.search-area input{
+    width: calc(100% - 70px);
+    margin: 10px 5px;
+    background-color: #eee;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+.button{
+    background-color: grey;
+    padding: 10px 10px;
+    margin: -6px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.loading {
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+}
+.loading .iconfont {
+    display: inline-block;
+    animation: 1s rotate linear infinite;
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.cover img{
+    width: 50px;
+    border-radius: 3px;
+    margin-right: 15px;
+    margin-left: 10px;
+}

@@ -15,7 +15,7 @@ body{
     line-height: 1.2;
     background-color: #fff;
 }
-main{
+#repo-board, #user-board, #search{
     height: calc(100vh - 50px);
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
